@@ -3,16 +3,21 @@
     <Header/>
     <main class="content">
       <div class="contentUl">
-        <div class="images-list" v-for="item of $store.state.dataArr">
-          <img :src="item.photo_name" :alt="item.photo_city" class="images-link-img">
-          <div class="image-list-hover">
-            <a :href="item.photo_name" class="images-link-hover" target="_blank">
-              {{ item.photo_city }}
-              <br>
-              {{ item.photo_data }}
-            </a>
-          </div>
-        </div>
+<!--        <div class="b-item" v-for="item of $store.state.dataArr">-->
+<!--          <img :src="item.photo_name" :alt="item.photo_city" class="b-item__img">-->
+<!--          <div class="b-item__hoverBlock">-->
+<!--            <a :href="item.photo_name" class="b-item__hoverLink" target="_blank">-->
+<!--              {{ item.photo_city }}-->
+<!--              <br>-->
+<!--              {{ item.photo_data }}-->
+<!--            </a>-->
+<!--          </div>-->
+<!--        </div>-->
+        <Item
+            v-for="item of this.$store.state.dataArr"
+            :item="item"
+            :key="item.id_obj"
+        />
       </div>
     </main>
     <Footer/>
@@ -22,6 +27,7 @@
 <script>
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Item from "@/components/Item";
 
 export default {
   name: "Works",
@@ -30,7 +36,8 @@ export default {
   },
   components: {
     Header,
-    Footer
+    Footer,
+    Item
   },
   mounted() {
     this.$store.commit('getData')
@@ -39,6 +46,7 @@ export default {
 </script>
 
 <style lang="scss">
+
 .content .contentUl {
   display: flex;
   justify-content: space-between;
@@ -46,66 +54,66 @@ export default {
   flex-flow: wrap;
 }
 
-.images-list {
-  width: 24.3%;
-  height: 200px;
-  margin-bottom: 1%;
-  position: relative;
-}
-
-.images-list:hover .image-list-hover {
-  visibility: visible;
-}
-
-.image-list-hover {
-  top: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #ebebeb6e;
-  visibility: hidden;
-}
-
-.images-link-hover {
-  display: block;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  font-size: x-large;
-  font-weight: bold;
-  padding-top: 70px;
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0);
-  -webkit-text-stroke: 1.5px #000000;
-}
-
-.images-link-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-@media screen and (max-width: 992px) {
-}
-
-@media screen and (max-width: 768px) {
-  .images-list {
-    width: 33%;
-  }
-
-  .images-list:last-child {
-    width: 66.5%;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .images-list {
-    width: 49.5%;
-  }
-
-  .images-list:last-child {
-    width: 49.5%;
-  }
-}
+//.b-item {
+//  width: 24.3%;
+//  height: 200px;
+//  margin-bottom: 1%;
+//  position: relative;
+//
+//  &:hover .b-item__hoverBlock {
+//    visibility: visible;
+//  }
+//
+//  .b-item__img {
+//    width: 100%;
+//    height: 100%;
+//    object-fit: cover;
+//    object-position: center;
+//  }
+//
+//  .b-item__hoverBlock {
+//    top: 0;
+//    position: absolute;
+//    width: 100%;
+//    height: 100%;
+//    background-color: #ebebeb6e;
+//    visibility: hidden;
+//
+//    .b-item__hoverLink {
+//      display: block;
+//      width: 100%;
+//      height: 100%;
+//      text-align: center;
+//      font-size: x-large;
+//      font-weight: bold;
+//      padding-top: 70px;
+//      text-decoration: none;
+//      color: rgba(0, 0, 0, 0);
+//      -webkit-text-stroke: 1.5px #000000;
+//    }
+//  }
+//}
+//
+//@media screen and (max-width: 992px) {
+//}
+//
+//@media screen and (max-width: 768px) {
+//  .b-item {
+//    width: 33%;
+//  }
+//
+//  .b-item:last-child {
+//    width: 66.5%;
+//  }
+//}
+//
+//@media screen and (max-width: 576px) {
+//  .b-item {
+//    width: 49.5%;
+//  }
+//
+//  .b-item:last-child {
+//    width: 49.5%;
+//  }
+//}
 </style>

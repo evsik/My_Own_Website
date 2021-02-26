@@ -32,8 +32,10 @@ export default {
   components: {
     Header
   },
+
   updated() {
     this.customStyle()
+    // this.getOverflow()
   },
 
   //This method will be needed in the future to change the header style when switching the router
