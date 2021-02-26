@@ -3,15 +3,7 @@
     <video src="../assets/first.mp4" autoplay loop muted></video>
     <div class="wrapper">
       <div class="container">
-        <header>
-          <nav>
-            <ul>
-              <li class="nav-list"><a href="#" class="nav-link">Works</a>
-              </li>
-              <li class="nav-list"><a href="#" class="nav-link">More</a></li>
-            </ul>
-          </nav>
-        </header>
+        <Header/>
         <main class="content"></main>
         <footer>
           <p class="footer-name">
@@ -26,11 +18,13 @@
 </template>
 
 <script>
-
+import Header from "@/components/Header";
 
 export default {
   name: 'Home',
-  components: {}
+  components: {
+    Header
+  }
 }
 </script>
 

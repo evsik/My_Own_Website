@@ -43,40 +43,6 @@ video {
     min-height: 100vh;
 }
 
-header {
-    height: 130px;
-    position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 1;
-}
-
-nav {
-    height: 100%;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    align-items: center;
-}
-
-.nav-list {
-    padding: 2%;
-}
-
-.nav-link {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.4);
-    font-size: larger;
-}
-
-.nav-link:hover {
-    color: rgba(0, 0, 0, 0.8);;
-}
-
 .content {
     flex-grow: 1;
     padding: 130px 1% 0 1%;
