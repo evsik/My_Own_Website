@@ -1,13 +1,16 @@
 <template>
   <header>
-<!--    <slot name="nav"></slot>-->
+    <!--    <slot name="nav"></slot>-->
     <nav class="b-headerHav" slot="nav">
       <ul class="b-headerHav__ul">
         <li class="b-headerHav__list">
-          <router-link to="/works" class="b-headerHav__link">Works</router-link>
+          <router-link to="/" class="b-headerHav__link">Home</router-link>
         </li>
         <li class="b-headerHav__list">
-          <router-link to="/" class="b-headerHav__link">More</router-link>
+          <router-link to="/photosPage" class="b-headerHav__link">Photos</router-link>
+        </li>
+        <li class="b-headerHav__list">
+          <router-link to="/more" class="b-headerHav__link">More</router-link>
         </li>
       </ul>
     </nav>
@@ -16,7 +19,7 @@
 
 <script>
 export default {
-  name: "Header"
+  name: "Header",
 }
 </script>
 
@@ -54,4 +57,36 @@ header {
     }
   }
 }
+
+.trackingOutContract {
+  -webkit-animation: trackingOutContract 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: trackingOutContract 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes trackingOutContract {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+}
+
+@keyframes trackingOutContract {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+}
+
 </style>

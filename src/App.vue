@@ -41,7 +41,7 @@ export default {
   //This method will be needed in the future to change the header style when switching the router
   methods: {
     customStyle() {
-      if (this.$route.path === '/works') {
+      if (this.$route.path === '/photosPage') {
         document.querySelector("header").style.backgroundColor = "#ebebeb";
       } else {
         document.querySelector("header").style.backgroundColor = "transparent";

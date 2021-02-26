@@ -30,7 +30,7 @@ import Footer from "@/components/Footer";
 import Item from "@/components/Item";
 
 export default {
-  name: "Works",
+  name: "PhotosPage",
   data() {
     return {}
   },
