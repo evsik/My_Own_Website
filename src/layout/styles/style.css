@@ -47,15 +47,3 @@ video {
     flex-grow: 1;
     padding: 130px 1% 0 1%;
 }
-
-footer {
-    text-align: center;
-    padding: 2%;
-    flex-shrink: 0;
-}
-
-.footer-name a {
-    text-decoration: none;
-    font-size: larger;
-    color: rgba(0, 0, 0, 0.8);
-}
