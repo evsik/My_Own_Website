@@ -1,18 +1,40 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="landing-page">
+    <video src="../assets/first.mp4" autoplay loop muted></video>
+    <div class="wrapper">
+      <div class="container">
+        <header>
+          <nav>
+            <ul>
+              <li class="nav-list"><a href="#" class="nav-link">Works</a>
+              </li>
+              <li class="nav-list"><a href="#" class="nav-link">More</a></li>
+            </ul>
+          </nav>
+        </header>
+        <main class="content"></main>
+        <footer>
+          <p class="footer-name">
+            <a href="#">
+              Evsikov Ilya
+            </a>
+          </p>
+        </footer>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+
 
 export default {
   name: 'Home',
-  components: {
-    HelloWorld
-  }
+  components: {}
 }
 </script>
+
+<style lang="scss">
+
+
+</style>
