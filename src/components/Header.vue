@@ -4,7 +4,7 @@
     <nav class="b-headerHav" slot="nav">
       <ul class="b-headerHav__ul">
         <li class="b-headerHav__list">
-          <router-link to="/" class="b-headerHav__link">Works</router-link>
+          <router-link to="/works" class="b-headerHav__link">Works</router-link>
         </li>
         <li class="b-headerHav__list">
           <router-link to="/" class="b-headerHav__link">More</router-link>
