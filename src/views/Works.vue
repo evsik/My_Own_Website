@@ -25,6 +25,9 @@ import Footer from "@/components/Footer";
 
 export default {
   name: "Works",
+  data() {
+    return {}
+  },
   components: {
     Header,
     Footer
