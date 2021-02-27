@@ -35,6 +35,7 @@ export default {
 
   updated() {
     this.customStyle()
+    this.overStyle()
     // this.getOverflow()
   },
 
@@ -45,6 +46,13 @@ export default {
         document.querySelector("header").style.backgroundColor = "#ebebeb";
       } else {
         document.querySelector("header").style.backgroundColor = "transparent";
+      }
+    },
+    overStyle() {
+      if (this.$route.path !== '/') {
+        document.querySelector("body").style.overflow = "auto";
+      } else {
+        document.querySelector("body").style.overflow = "hidden";
       }
     }
   }

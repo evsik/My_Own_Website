@@ -14,6 +14,7 @@ body {
     position: relative;
     font-family: 'Quicksand', sans-serif;
     height: 100%;
+    overflow: hidden;
 }
 
 .overClass {
@@ -29,7 +30,7 @@ video {
     width: 100%;
     object-fit: cover;
     object-position: center center;
-
+    z-index: 0;
 }
 
 .wrapper {
@@ -51,4 +52,18 @@ video {
 .content {
     flex-grow: 1;
     padding: 130px 1% 0 1%;
+}
+
+@media screen and (max-width: 768px) {
+    video {
+        display: none;
+    }
+
+    .landing-page {
+        /*background: url("../../assets/pexels-markus-spiske-965625.jpg") no-repeat center;*/
+        /*background-size: cover;*/
+
+        background: rgb(255, 217, 82);
+        background: linear-gradient(0deg, rgba(255, 217, 82, 0.7245273109243697) 0%, rgba(250, 181, 0, 0.80015756302521) 100%);
+    }
 }
