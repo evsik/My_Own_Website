@@ -44,10 +44,16 @@ export default {
     overStyle() {
       if (this.$route.path !== '/') {
         document.querySelector("body").style.overflow = "auto";
+        document.querySelector("header").style.height = "130px";
       } else {
         document.querySelector("body").style.overflow = "hidden";
+        document.querySelector("header").style.height = "auto";
       }
     },
+    // handleTabletChange(e) {
+    //   this.mediaActive = !e.matches;
+    //   document.querySelector("html").style.height = "100vh";
+    // }
 // if the video is not viewed from a computer the background video is disabled
 //     handleTabletChange(e) {
 //       if (e.matches) {

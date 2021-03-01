@@ -25,7 +25,7 @@ export default {
 
 <style lang="scss">
 header {
-  height: 130px;
+  //height: 130px;
   position: fixed;
   right: 0;
   left: 0;

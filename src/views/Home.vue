@@ -36,7 +36,6 @@ export default {
   methods: {
     handleTabletChange(e) {
       this.mediaActive = !e.matches;
-      document.querySelector("video").style.display = "none";
     }
   }
 }
@@ -44,7 +43,8 @@ export default {
 
 <style lang="scss">
 .bgcMedia {
-  background: url("../assets/pexels-giovanni-calia-2733337.jpg") no-repeat center;
+  background: url("../assets/pexels-giovanni-calia-2733337.jpg");
   background-size: cover;
+  background-position: center;
 }
 </style>
