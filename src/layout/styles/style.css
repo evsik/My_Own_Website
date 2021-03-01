@@ -54,16 +54,16 @@ video {
     padding: 130px 1% 0 1%;
 }
 
-@media screen and (max-width: 768px) {
-    video {
-        display: none;
-    }
+/*@media screen and (max-width: 768px) {*/
+/*    video {*/
+/*        display: none;*/
+/*    }*/
 
-    .landing-page {
-        /*background: url("../../assets/pexels-markus-spiske-965625.jpg") no-repeat center;*/
-        /*background-size: cover;*/
+/*    .landing-page {*/
+/*        !*background: url("../../assets/pexels-markus-spiske-965625.jpg") no-repeat center;*!*/
+/*        !*background-size: cover;*!*/
 
-        background: rgb(255, 217, 82);
-        background: linear-gradient(0deg, rgba(255, 217, 82, 0.7245273109243697) 0%, rgba(250, 181, 0, 0.80015756302521) 100%);
-    }
-}
+/*        background: rgb(255, 217, 82);*/
+/*        background: linear-gradient(0deg, rgba(255, 217, 82, 0.7245273109243697) 0%, rgba(250, 181, 0, 0.80015756302521) 100%);*/
+/*    }*/
+/*}*/
